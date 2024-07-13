@@ -1,0 +1,3 @@
+/*bookmarklet、問題の画面で実行すると、サイトのhtmlから解答解説を抜き出して問題文の上に表示する。
+cssは気が向いたらつける*/
+javascript:(function()%7B%20%20%20var%20explainText%20=%20document.getElementById('explain-dialog').textContent;%20%20%20var%20h2Elements%20=%20document.getElementsByTagName('h2');%20%20%20%20for%20(var%20i%20=%200;%20i%20%3C%20h2Elements.length;%20i++)%20%7B%20%20%20%20%20var%20h2Element%20=%20h2Elements%5Bi%5D;%20%20%20%20%20var%20newParagraph%20=%20document.createElement('p');%20%20%20%20%20newParagraph.textContent%20=%20explainText;%20%20%20%20%20h2Element.parentNode.insertBefore(newParagraph,%20h2Element.nextSibling);%20%20%20%7D%20%7D)();

@@ -8,7 +8,7 @@ javascript:(function()%7Bvar%20questionText=document.querySelector('.qtext-conta
 eライブラリの問題の画面を開きながらこのブックマークレットを実行すると、ページの左上にAIのサイトがiframeで表示されます。
 何も押さなくても自動的に送信してくれるので返答が来るのを待ちましょう。
 エラーが返ってきた場合は時間が経ってからもう一度やると正常に返ってくることがあります。3回やってもダメだったら大人しく諦めよう。
-画像がある問題には使わないでね(適当な答えを返されます)
+画像がある問題には使わないでね(適当な答えを返されます)計算問題もおかしくなることがあるから控えた方がいいです。
 ## Show-answer-explanation.js
 
 javascript:(function()%7B%20%20%20var%20explainText%20=%20document.getElementById('explain-dialog').textContent;%20%20%20var%20h2Elements%20=%20document.getElementsByTagName('h2');%20%20%20%20for%20(var%20i%20=%200;%20i%20%3C%20h2Elements.length;%20i++)%20%7B%20%20%20%20%20var%20h2Element%20=%20h2Elements%5Bi%5D;%20%20%20%20%20var%20newParagraph%20=%20document.createElement('p');%20%20%20%20%20newParagraph.textContent%20=%20explainText;%20%20%20%20%20h2Element.parentNode.insertBefore(newParagraph,%20h2Element.nextSibling);%20%20%20%7D%20%7D)();
@@ -16,4 +16,5 @@ javascript:(function()%7B%20%20%20var%20explainText%20=%20document.getElementByI
 ## Show-answer-explanation.jsの使い方
 eライブラリの問題の画面を開きながらこのブックマークレットを実行すると、本来回答が終わった後にしか見ることのできない解答解説を見ることができます。
 解答解説は問題文の上に表示されます。
-※数学や理科の計算のところはLaTeXが使われているので正しく表示されません。　
+※数学や理科の計算のところはLaTeXが使われているので正しく表示されません。(答えは頑張れば読み取れます)
+

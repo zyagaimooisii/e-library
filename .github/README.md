@@ -1,5 +1,5 @@
 # bookmarkletの追加方法
-追加しやすいようにリンクかしたものは[これ](https://zyagaimooisii.github.io/e-library/)
+追加しやすいようにリンクかしたものは[ここ](https://zyagaimooisii.github.io/e-library/)
 ## open-AI-iframe.js
 右のリンクをブックマークに追加してわかりやすい名前に変更してください。
 スマホの場合は長押しでブックマークに追加を選択、使用時はURLバーにブックマーク名を入力すると候補に出てくるはずなので、それを選択してください。

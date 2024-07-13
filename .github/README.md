@@ -1,5 +1,5 @@
 # bookmarkletの追加方法
-追加しやすいようにリンクかしたものは[ここ](https://zyagaimooisii.github.io/e-library/)
+追加しやすいようにリンクかしたものは[ここ](https://zyagaimooisii.github.io/e-library/)←なぜかうまく動かなくなるから↓のコードを使用してください
 ## open-AI-iframe.js
 
 javascript:(function()%7Bvar%20questionText=document.querySelector('.qtext-container').textContent;var%20answerElements=document.querySelectorAll('%23questionanswer-01%20li');var%20answers=%5B%5D;for(var%20i=0;i%3CanswerElements.length;i++)%7Banswers.push(answerElements%5Bi%5D.textContent);%7Dvar%20question=questionText+'%5Cn%5Cn'+answers.join(',');var%20data=%7Bquestion:question%7D;var%20iframe=document.createElement('iframe');iframe.style.position='fixed';iframe.style.top=0;iframe.style.left=0;iframe.style.width='100%25';iframe.style.height='300px';iframe.src='https://loud-changeable-bestseller.glitch.me/?question='+encodeURIComponent(question);document.body.appendChild(iframe);%7D)();
